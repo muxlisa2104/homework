@@ -1,0 +1,53 @@
+def salom_ber():
+    """Salom beruvchi funksiya"""
+    print("Assalomu aleykum!")
+
+salom_ber()
+
+def salom_ber(ism):
+    """Foydalanuvchi ismini qabul qilib, unga salom beruvchi funksiya"""
+    print(f"Assalomu aleykum, hurmatli {ism.title()}!")
+
+salom_ber('hasan')
+print(salom_ber.__doc__)
+
+def toliq_ism(ism, familiya):
+    """Foydalanuvchi ism va familyasini jamlab chiqaruvchi funksiya"""
+    print(f"Foydalanuvchi ismi: {ism.title()}\n"
+          f"Foydalanuvchi familiyasi: {familiya.title()}")
+toliq_ism("muxlisa", "mavlanova")
+
+def yosh_hisobla(tugilgan_yil, joriy_yil=2024):
+    """Foydalanuvchi tuyg'ilgan yilidan uning yoshini hisoblaydi"""
+    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
+yosh_hisobla(2008)
+
+def toliq_ism_yasa(ism, familiya):
+    """To'liq ism qaytaruvchi funksiya"""
+    toliq_ism = f"{ism} {familiya}"
+    return toliq_ism
+# print(toliq_ism_yasa("Muxlisa", "Mavlanova"))
+talaba1=toliq_ism_yasa("Muxlisa", "Mavlanova")
+talaba2=toliq_ism_yasa("Bonu", "Muhammadsalayeva")
+print(talaba1)
+print(talaba2)
+
+
+def avto_info(kompaniya, model, rangi, karobka, yili, narhi=None):
+    avto={"kompaniya": kompaniya,
+          "model": model,
+          "rangi": rangi,
+          "karobka": karobka,
+          "yil": yili,
+          "narh": narhi}
+    return avto
+avto1=avto_info("GM", "Malibu", "Qora", "Avtomat",2018)
+print(avto1)
+
+def oraliq(min, max):
+    sonlar=[]
+    while min<max:
+        sonlar.append(min)
+        min+=1
+    return sonlar
+print(oraliq(1, 10))
