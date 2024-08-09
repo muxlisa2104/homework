@@ -1,0 +1,17 @@
+#1-topshiriq
+def kopaytirish(*sonlar):
+    kopaytma = 1
+    for son in sonlar:
+        kopaytma *= son
+    return kopaytma
+print(kopaytirish(9,7,11,24))
+
+
+#2-topshiriq
+def talabalar(ism, familiya, **malumot):
+    malumot ["Ism"]=ism
+    malumot ["Familiya"]=familiya
+    return malumot
+talaba1=talabalar("Muxlisa", "Mavlanova", yil=2008)
+talaba2=talabalar("Alfiya", "Boboxonova", yil=2008)
+print(talaba1, talaba2)
