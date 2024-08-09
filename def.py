@@ -42,17 +42,16 @@ katta_son()
 
 
 #5-topshiriq
-def kv():
+def kv(x,y=2):
     x=float(input("Istagan soningizni kiriting: "))
-    y=2
-    kv=x**2
+    kv=x**y
     print(f"{x} ning kvadrati {kv}")
 kv()
 #6-topshiriq
 
 def qoldiq():
     son = int(input("Son kiriting: "))
-    for i in (2, 10):
+    for i in range(2, 10):
         if son % i == 0:
             print(f"{son} = {i} ga qoldiqsiz bo'linadi.")
         else:
