@@ -1,0 +1,35 @@
+#1-topshiriq
+
+import math
+x = 144
+
+print( math.sqrt ( x ))
+
+
+#2-topshiriq
+
+print(pow(2, 10))
+
+
+#3-topshiriq
+
+import math
+r=math.radians(30)
+
+print(math.sin(r))
+
+
+#4-topshiriq
+
+import  random
+son = random.randint(55, 155)
+
+print(son)
+
+
+#5-topshiriq
+
+import random as r
+colors = ["qizil", "yashil", "ko'k", "sariq", "qora"]
+
+print(r.choice(colors))
