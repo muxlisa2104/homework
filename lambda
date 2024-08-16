@@ -1,0 +1,16 @@
+# 2-masala: So'zlar uzunligini aniqlash
+# Vazifa: Berilgan so'zlar ro'yxatidagi har bir so'zning uzunligini aniqlab,(so'z, uzunlik) shaklidagi tuplamlar ro'yxatini hosil qiling
+
+
+matn=['olma','anjir','shaftoli','behi','qovun']
+uzunlik=list(map(lambda meva:len(meva), matn))
+print(uzunlik)
+
+
+
+
+# 3-masala: Musbat sonlarni ajratib olish
+# Vazifa: Berilgan sonlar ro'yxatidan faqat musbat sonlarni ajratib oluvchi lambda funksiyasini yozing.
+sonlar=[1,-9,6,-15,-99,8,24]
+musbat_son=list(filter(lambda sonlar : sonlar >= 0, sonlar))
+print(musbat_son)
